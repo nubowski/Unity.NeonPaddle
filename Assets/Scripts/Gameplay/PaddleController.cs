@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PaddleController : MonoBehaviour
 {
-    public float speed = 10.0f;
-    public float boundary = 8f;
+    public float speed = 30.0f;
+    public float boundary = 20.0f;
     
     void Start()
     {
