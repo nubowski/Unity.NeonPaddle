@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 namespace UI
@@ -39,6 +40,7 @@ namespace UI
         private void StartGame()
         {
             Debug.Log("Game started!");
+            SceneManager.LoadScene("Game");
         }
     }
 }
