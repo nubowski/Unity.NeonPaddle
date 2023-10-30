@@ -1,11 +1,13 @@
-﻿using System;
+﻿using Data;
 using UI;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class GameInitializer : MonoBehaviour
 {
-    [SerializeField] private UILoader uiLoader; // Reference to UILoader component via inspector.
+    [SerializeField] private UIProfile uiProfile;
 
+    private UIDocument _uiDocument;
     private void Start()
     {
         InitializeSystems();
@@ -19,13 +21,16 @@ public class GameInitializer : MonoBehaviour
 
     private void InitializeUI()
     {
-        if(uiLoader != null)
+        var uiGameObject = new GameObject("UIRoot");
+        _uiDocument = uiGameObject.AddComponent<UIDocument>();
+        _uiDocument.panelSettings = uiProfile.panelSettings;
+        _uiDocument.visualTreeAsset = uiProfile.visualTreeAsset;
+        
+        // Instantiate controller from UIProfile (optional)
+        if(uiProfile.controller != null)
         {
-            uiLoader.LoadUI();
-        }
-        else
-        {
-            Debug.LogError("UILoader not assigned in the inspector.");
+            UIControllerBase instantiatedController = Instantiate(uiProfile.controller, uiGameObject.transform);
+            instantiatedController.InitializeUI();
         }
     }
 }

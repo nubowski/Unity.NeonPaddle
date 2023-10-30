@@ -3,7 +3,7 @@
     <ui:VisualElement name="MainMenu" class="main-menu">
         <ui:Label text="Neon Paddle" class="title" />
         <ui:Button name="StartButton" text="Start Game" />
-        <ui:Button name="OptionButton" text="Options" />
+        <ui:Button name="OptionsButton" text="Options" />
         <ui:Button name="ExitButton" text="Exit" />
     </ui:VisualElement>
 </ui:UXML>

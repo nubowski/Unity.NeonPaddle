@@ -6,12 +6,12 @@ namespace UI
 {
     public abstract class UIControllerBase : MonoBehaviour
     {
-        protected UIDocument _uiDocument;
+        protected UIDocument UIDocument;
 
         private void Awake()
         {
-            _uiDocument = GetComponent<UIDocument>();
-            if (_uiDocument == null)
+            UIDocument = GetComponentInParent<UIDocument>();
+            if (UIDocument == null)
             {
                 Debug.LogError("UIDocument component is missing!");
             }
