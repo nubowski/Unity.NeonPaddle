@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/USS/MainMenu.uss?fileID=7433441132597879392&amp;guid=b814fa1ba6ba4b2eb7478646e86f46c1&amp;type=3#MainMenu" />
+    <ui:VisualElement name="MainMenu" class="main-menu">
+        <ui:Label text="Neon Paddle" class="title" />
+        <ui:Button name="StartButton" text="Start Game" />
+        <ui:Button name="OptionsButton" text="Options" />
+        <ui:Button name="ExitButton" text="Exit" />
+    </ui:VisualElement>
+</ui:UXML>

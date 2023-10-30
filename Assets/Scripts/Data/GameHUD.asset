@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a29ba2e806ca4e0eb7c630c2097e3830, type: 3}
+  m_Name: GameHUD
+  m_EditorClassIdentifier: 
+  panelSettings: {fileID: 11400000, guid: 2d062ae96eb17bb49b1ae04b5b93ce96, type: 2}
+  visualTreeAsset: {fileID: 9197481963319205126, guid: 93af531277853d445adc9c736e8fcb85, type: 3}
+  controller: {fileID: 9035898673339458771, guid: 72ae460965b9f56488d53c6235d61924, type: 3}

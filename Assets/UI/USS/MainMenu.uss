@@ -1,0 +1,22 @@
+﻿.main-menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    font-size: 48px;
+    -unity-font-style: bold;
+    color: wheat;
+    margin-bottom: 20px;
+}
+
+.ui-menu-button {
+    font-size: 24px;
+    color: wheat;
+    width: 200px;
+    height: 50px;
+    margin: 10px 0;
+}
