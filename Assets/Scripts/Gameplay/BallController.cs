@@ -9,7 +9,7 @@ namespace Gameplay
         public float speed = 15.0f;
         private Rigidbody2D _rb;
         private Vector2 _ballDirection;
-        private bool _gameStared = false;
+        private bool _gameStarted = false;
 
         private void Start()
         {
@@ -23,9 +23,9 @@ namespace Gameplay
         private void Update()
         {
             // check for launch
-            if (!_gameStared && Input.GetKeyDown(KeyCode.Space))
+            if (!_gameStarted && Input.GetKeyDown(KeyCode.Space))
             {
-                _gameStared = true;
+                _gameStarted = true;
                 _rb.velocity = _ballDirection * speed;
             }
         }
