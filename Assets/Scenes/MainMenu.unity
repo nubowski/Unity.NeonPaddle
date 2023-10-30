@@ -222,6 +222,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1427867491}
   - component: {fileID: 1427867492}
+  - component: {fileID: 1427867493}
   m_Layer: 0
   m_Name: GameInitializer
   m_TagString: Untagged
@@ -256,7 +257,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6312a7558e04f2b84ee94d78f9ce592, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uiLoaderPrefab: {fileID: 0}
+  uiLoader: {fileID: 1936886484108499637, guid: 32c39855126b2ed4fa75bcf4310a435f, type: 3}
+--- !u!114 &1427867493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427867490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee73bddad3794a14be78eb7f3ab9dae4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panelSettingsAddress: PanelSettings
+  uxmlAssetAddress: MainMenu
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
