@@ -1,24 +1,31 @@
 ﻿using System;
+using UI;
 using UnityEngine;
 
 public class GameInitializer : MonoBehaviour
 {
-        [SerializeField] private GameObject uiLoaderPrefab;
+    [SerializeField] private UILoader uiLoader; // Reference to UILoader component via inspector.
 
-        private void Start()
-        {
-                InitializeSystems();
-                InitializeUI();
-        }
+    private void Start()
+    {
+        InitializeSystems();
+        InitializeUI();
+    }
 
-        private void InitializeSystems()
-        {
-                // for future stuff for ini/upload/bundle/whatever
-        }
+    private void InitializeSystems()
+    {
+        // Future systems initialization.
+    }
 
-        private void InitializeUI()
+    private void InitializeUI()
+    {
+        if(uiLoader != null)
         {
-             // simple UI starter
-             Instantiate(uiLoaderPrefab);
+            uiLoader.LoadUI();
         }
+        else
+        {
+            Debug.LogError("UILoader not assigned in the inspector.");
+        }
+    }
 }
